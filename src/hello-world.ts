@@ -1,5 +1,1 @@
-import { constants } from './constants.js';
-
-export const sayHello = (): string => {
-  return constants.HELLO_WORLD;
-};
+export { sayHello } from '@mjwheatley/npm-package-starter-private/hello-world';

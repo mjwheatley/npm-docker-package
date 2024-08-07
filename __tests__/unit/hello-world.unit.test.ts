@@ -1,6 +1,7 @@
-import { constants, sayHello } from '../../src/index.js';
+import { constants } from '../../src/constants.js';
+import { sayHello } from '../../src/hello-world.js';
 
-describe('index.ts unit tests', () => {
+describe('hello-world unit tests', () => {
   describe('sayHello()', () => {
     it('should return "Hello World!"', () => {
       expect(sayHello()).toBe(constants.HELLO_WORLD);

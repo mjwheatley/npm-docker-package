@@ -71,6 +71,16 @@ export default {
       },
     ],
     '@semantic-release/npm',
+    [
+      '@semantic-release-plus/docker',
+      {
+        name: {
+          registry: process.env.ECR_REPOSITORY_URL.split('/')[0],
+          repository: process.env.ECR_REPOSITORY_URL.split('/')[1],
+        },
+        skipLogin: true,
+      },
+    ],
     '@semantic-release/github',
   ],
 };
